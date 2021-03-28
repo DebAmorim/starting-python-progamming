@@ -6,6 +6,7 @@ from functions import do_math
 from functions import print_if
 from functions import print_for
 from functions import print_while
+import re
 
 # my_function("Cd2", 'é muito legal')
 # print_default_arguments()
@@ -14,4 +15,8 @@ from functions import print_while
 # print(do_math(1,6))
 # print_if('Débora', False)
 # print_for(['Deb', 'Eric', 'Fabi', 'Guto', 'Duda'])
-print_while(1)
+# print_while(1)
+
+string = "'I AM NOT YELLING!', she said."
+new = re.sub('[A-Z]', '', string)
+print(new)
